@@ -1,6 +1,4 @@
-var songTime;
-var audioID;
-var g = 0;
+
 cc.Class({
     extends: cc.Component,
 
@@ -12,20 +10,25 @@ cc.Class({
     },
 
     play: function () {
-        audioID = cc.audioEngine.play(this.audioSource, false, 0.8);
+      this.audioID = cc.audioEngine.play(this.audioSource, false, 0.8);
     },
    
-    // onLoad () {},
+    onLoad () {
+      this.songTime;
+      this.audioID;
+      this.g = 0;
+    },
+
     start () {
       this.scheduleOnce(this.play,2.4);
     },
 
      update (dt) {
-     if(audioID != null){
-        songTime  = cc.audioEngine.getCurrentTime(audioID);
-        cc.log(songTime);
-     if(songTime == 0){
-        alert("stop");
+     if(this.audioID != null){
+       this.songTime  = cc.audioEngine.getCurrentTime(this.audioID);
+       //cc.log(this.songTime);
+     if(this.songTime == 0){
+        //alert("stop");
      }
      }
      },
