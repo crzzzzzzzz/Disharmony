@@ -1,9 +1,12 @@
-
+var Notes = require("song1");
 var recorder = {
-    Score: null ,//记录分数
-    Combo: null ,//记录连击数
-    Miss: null, //记录失误数
-    All: null //记录总数
+    Score: 0 ,//记录分数
+    Combo: 0 ,//记录连击数
+    maxCombo: 0,//记录最大连击数
+    Miss: 0, //记录失误数
+    All: 0,//计算正确数
+    Correct :0,//记录正确数
+    noOperate: 0,//暂时记录误操作
  };
 
 cc.Class({
@@ -15,7 +18,7 @@ cc.Class({
             type:cc.Label
         },
 
-        All:{
+        Correct:{
             default:null,
             type:cc.Label
         },
@@ -30,12 +33,21 @@ cc.Class({
 
     // onLoad () {},
 
-    //start () {},
+    start () {
+        for(var item in recorder){
+            recorder[item] = 0;
+        }
+    },
 
     update (dt) {
-    this.All.string = "All：" + recorder.All;
-    this.Combo.string = "Combo：" + recorder.Combo;
-    this.Miss.string = "Miss：" + recorder.Miss;
+    recorder.Correct = recorder.All-recorder.noOperate;
+    this.Correct.string = "CORRECT：" + recorder.Correct;
+    this.Combo.string = "COMBO：" + recorder.Combo;
+    this.Miss.string = "MISS：" + recorder.Miss;
+    //更新最大连击数
+    recorder.maxCombo = recorder.Combo>recorder.maxCombo?recorder.Combo:recorder.maxCombo;
+    cc.log('length'+Notes.length);
+    cc.log('correct'+recorder.Correct);
     },
 });
 

@@ -1,0 +1,175 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Result",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 4.5,
+  "sample": 60,
+  "speed": 1.5,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "屏幕/分数(Score)": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "屏幕/封面": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "屏幕/result": {
+        "props": {
+          "y": [
+            {
+              "frame": 1,
+              "value": 0,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 2.5,
+              "value": 418
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1,
+              "value": 0,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "屏幕/maxCombo": {
+        "props": {
+          "y": [
+            {
+              "frame": 1.6666666666666667,
+              "value": -200,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": 91
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.6666666666666667,
+              "value": 0,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "屏幕/Score": {
+        "props": {
+          "y": [
+            {
+              "frame": 2.3333333333333335,
+              "value": -554,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 3.8333333333333335,
+              "value": -263
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 2.3333333333333335,
+              "value": 0,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 3.8333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "屏幕/execution": {
+        "props": {
+          "y": [
+            {
+              "frame": 3,
+              "value": -873,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 4.5,
+              "value": -594
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 3,
+              "value": 0,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 4.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "屏幕/score": {
+        "props": {
+          "y": [
+            {
+              "frame": 2.3333333333333335,
+              "value": -554,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 3.8333333333333335,
+              "value": -263
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 2.3333333333333335,
+              "value": 0,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 3.8333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

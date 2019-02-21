@@ -1,0 +1,124 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "loadGame",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.1666666666666665,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "左色块条": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -207,
+              "curve": [
+                0.18,
+                0.89,
+                0.31,
+                1.21
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "右色块条": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 207,
+              "curve": [
+                0.18,
+                0.89,
+                0.31,
+                1.21
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "屏幕": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 1637,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 1.55,
+              "value": 360,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 421
+            }
+          ]
+        }
+      },
+      "生成与判定(Control)/左判定灯": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.5,
+              "value": -644
+            },
+            {
+              "frame": 1.5,
+              "value": -452.7
+            }
+          ]
+        }
+      },
+      "生成与判定(Control)/右判定灯": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.5,
+              "value": 642.7,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.5,
+              "value": 451.3
+            }
+          ]
+        }
+      },
+      "调音台": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.6666666666666666,
+              "value": -515,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": 25,
+              "curve": "quadIn"
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

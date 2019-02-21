@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "7f316f86-ba52-459e-825a-23d5aaa6a380",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "9(After Coachella)[KRANE Remix]": {
+      "ver": "1.0.3",
+      "uuid": "ae6cbe6e-8342-4bc3-8c2b-79d468f57711",
+      "rawTextureUuid": "7f316f86-ba52-459e-825a-23d5aaa6a380",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 500,
+      "height": 500,
+      "rawWidth": 500,
+      "rawHeight": 500,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

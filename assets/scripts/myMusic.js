@@ -1,35 +1,69 @@
-
+var recorder = require("Score");
+var Notes = require("song1");
 cc.Class({
-    extends: cc.Component,
+  extends: cc.Component,
 
-    properties: {
-      audioSource: {
-            type: cc.AudioClip,
-            default: null
-        },
+  properties: {
+    song0: {
+      type: cc.AudioClip,
+      default: null
     },
 
-    play: function () {
-      this.audioID = cc.audioEngine.play(this.audioSource, false, 0.8);
-    },
-   
-    onLoad () {
-      this.songTime;
-      this.audioID;
-      this.g = 0;
+    song1: {
+      type: cc.AudioClip,
+      default: null
     },
 
-    start () {
-      this.scheduleOnce(this.play,2.4);
+    song2: {
+      type: cc.AudioClip,
+      default: null
     },
 
-     update (dt) {
-     if(this.audioID != null){
-       this.songTime  = cc.audioEngine.getCurrentTime(this.audioID);
-       //cc.log(this.songTime);
-     if(this.songTime == 0){
-        //alert("stop");
-     }
-     }
-     },
+    resultAnim:{
+      type:cc.Animation,
+      default:null
+    },
+
+    maxCombo:{
+      type:cc.Label,
+      default:null
+    },
+
+    score:{
+      type:cc.Label,
+      default:null
+    },
+
+    execution:{
+      type:cc.Label,
+      default:null
+    },
+
+  },
+
+  play: function () {
+      this.audioID = cc.audioEngine.play(this['song'+Global.songIndex], false, 1);
+      this.scheduleOnce(this.End,cc.audioEngine.getDuration(this.audioID))
+      cc.log(cc.audioEngine.getDuration(this.audioID));
+  },
+
+  End:function(){
+      var finalScore = 4 * recorder.Correct + 5*recorder.maxCombo - 2 * recorder.Miss
+      var exec = (recorder.Correct / Notes.length * 100).toFixed(2);
+      this.maxCombo.string = "MAXCOMBO :\n " + recorder.maxCombo;
+      this.score.string = "SCORE :\n" + finalScore;
+      this.execution.string = "EXECUTION :\n" + exec + '%';
+      this.resultAnim.play('Result');
+  },
+
+  onLoad() {
+    this.audioID;
+  },
+
+  start() {
+    this.scheduleOnce(this.play, 3);
+  },
+
+  //update(dt) {}
+  
 });

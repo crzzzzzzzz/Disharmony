@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "c700dfa4-8387-4fa9-8f18-860984985fd4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "9(After Coachella)": {
+      "ver": "1.0.3",
+      "uuid": "34ec16df-c97a-4fee-a7ff-7435c6e86158",
+      "rawTextureUuid": "c700dfa4-8387-4fa9-8f18-860984985fd4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 500,
+      "height": 500,
+      "rawWidth": 500,
+      "rawHeight": 500,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
