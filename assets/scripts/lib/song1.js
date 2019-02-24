@@ -213,5 +213,6 @@ var Notes = [
 Notes.fallSpeed = 650;
 //歌曲BPM(不知道咋测)
 Notes.BPM = 1;
+Notes.len = 246;
 
 module.exports = Notes;

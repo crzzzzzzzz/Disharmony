@@ -44,16 +44,16 @@ cc.Class({
   play: function () {
       this.audioID = cc.audioEngine.play(this['song'+Global.songIndex], false, 1);
       this.scheduleOnce(this.End,cc.audioEngine.getDuration(this.audioID))
-      cc.log(cc.audioEngine.getDuration(this.audioID));
   },
 
   End:function(){
-      var finalScore = 4 * recorder.Correct + 5*recorder.maxCombo - 2 * recorder.Miss
-      var exec = (recorder.Correct / Notes.length * 100).toFixed(2);
+      recorder.Score = 10 * recorder.Correct + 5*recorder.maxCombo -   recorder.Miss
+      var exec = (recorder.Correct / Notes.len * 100).toFixed(2);
       this.maxCombo.string = "MAXCOMBO :\n " + recorder.maxCombo;
-      this.score.string = "SCORE :\n" + finalScore;
+      this.score.string = "SCORE :\n" + recorder.Score;
       this.execution.string = "EXECUTION :\n" + exec + '%';
       this.resultAnim.play('Result');
+      cc.log('here');
   },
 
   onLoad() {

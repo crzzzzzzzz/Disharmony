@@ -11,9 +11,11 @@
       true
     ]
   ],
-  "design-resolution-height": 640,
-  "design-resolution-width": 960,
+  "design-resolution-height": 1280,
+  "design-resolution-width": 720,
   "excluded-modules": [
+    "WebGL Renderer",
+    "Renderer Texture",
     "Dynamic Atlas",
     "LabelOutline",
     "ParticleSystem",
@@ -23,14 +25,24 @@
     "RichText",
     "MotionStreak",
     "Widget",
+    "Button",
+    "ProgressBar",
     "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
     "EditBox",
     "VideoPlayer",
     "WebView",
+    "Audio",
+    "AudioSource",
+    "Animation",
+    "Collider",
     "Action",
     "Physics",
     "StudioComponent",
-    "Intersection"
+    "Intersection",
+    "Native NetWork"
   ],
   "fit-height": true,
   "fit-width": false,
@@ -42,7 +54,7 @@
     "height": 640,
     "width": 960
   },
+  "start-scene": "4310f31a-7e48-409a-999c-178cc5fca562",
   "use-customize-simulator": false,
-  "use-project-simulator-setting": false,
-  "start-scene": "current"
+  "use-project-simulator-setting": false
 }

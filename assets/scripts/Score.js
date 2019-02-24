@@ -46,8 +46,6 @@ cc.Class({
     this.Miss.string = "MISS：" + recorder.Miss;
     //更新最大连击数
     recorder.maxCombo = recorder.Combo>recorder.maxCombo?recorder.Combo:recorder.maxCombo;
-    cc.log('length'+Notes.length);
-    cc.log('correct'+recorder.Correct);
     },
 });
 

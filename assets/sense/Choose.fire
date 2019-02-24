@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.1275524355693158,
-      "y": 0.1275524355693158,
+      "x": 0.6069333205184533,
+      "y": 0.6069333205184533,
       "z": 1
     },
     "_quat": {
@@ -406,7 +406,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 974.55,
+      "width": 985.99,
       "height": 200
     },
     "_anchorPoint": {
@@ -416,7 +416,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 0,
+      "x": 2,
       "y": 433,
       "z": 0
     },
@@ -452,9 +452,9 @@
     "_srcBlendFactor": 1,
     "_dstBlendFactor": 771,
     "_useOriginalSize": false,
-    "_string": "Song Slect",
-    "_N$string": "Song Slect",
-    "_fontSize": 150,
+    "_string": "Song Select",
+    "_N$string": "Song Select",
+    "_fontSize": 137,
     "_lineHeight": 200,
     "_enableWrapText": true,
     "_N$file": {
@@ -1739,7 +1739,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -1084,
+      "x": -1127,
       "y": 82,
       "z": 0
     },

@@ -36,7 +36,6 @@ cc.Class({
 
     callback: function (event, customEventData) {
         //返回的动画
-        cc.log('here');
         var anim = this.getComponent(cc.Animation);
         Global.songIndex = this.pages.getCurrentPageIndex();
         cc.log(Global.songIndex);
