@@ -1,11 +1,6 @@
 cc.Class({
     extends: cc.Component,
 
-    properties: {
-    },
-
-    // LIFE-CYCLE CALLBACKS:
-
     onLoad () {
         this.picArr = ['龙卷风','9(After Coachella)','Tell Your World']
         var self = this;
@@ -13,8 +8,4 @@ cc.Class({
             self.node.getComponent(cc.Sprite).spriteFrame = spriteFrame;
         })
     },
-
-    //start () {},
-
-    // update (dt) {},
 });

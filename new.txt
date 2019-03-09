@@ -1,0 +1,5 @@
+scp -r res root@139.199.133.2:/usr/local/tomcat9/webapps/
+
+147qwert.
+
+1.1

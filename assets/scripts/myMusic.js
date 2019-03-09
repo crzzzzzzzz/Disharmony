@@ -39,11 +39,17 @@ cc.Class({
       default:null
     },
 
+    lR: {
+      default: null,
+      type: cc.Button
+    }
   },
+
 
   play: function () {
       this.audioID = cc.audioEngine.play(this['song'+Global.songIndex], false, 1);
-      this.scheduleOnce(this.End,cc.audioEngine.getDuration(this.audioID))
+      console.log(cc.audioEngine.getDuration(this.audioID));
+      this.scheduleOnce(this.End,cc.audioEngine.getDuration(this.audioID)||91)
   },
 
   End:function(){
@@ -53,6 +59,7 @@ cc.Class({
       this.score.string = "SCORE :\n" + recorder.Score;
       this.execution.string = "EXECUTION :\n" + exec + '%';
       this.resultAnim.play('Result');
+      this.lR.interactable = true;
       cc.log('here');
   },
 

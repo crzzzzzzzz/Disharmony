@@ -6,14 +6,22 @@ cc.Class({
             default:null,
             type:cc.Button
         },
-        leftMask:cc.Node,
-        rightMask:cc.Node      
+       
+        leftMask:{
+            default:null,
+            type:cc.Node
+        },
+
+        rightMask:{
+            default:null,
+            type:cc.Node
+        },    
     },
 
     onLoad(){
         var clickEventHandler = new cc.Component.EventHandler();
         clickEventHandler.target = this.node;//这个 node 节点是你的事件处理代码组件所属的节点
-        clickEventHandler.component = "Menu";//这个是代码文件名
+        clickEventHandler.component = "loadChoose";//这个是代码文件名
         clickEventHandler.handler = "callback";
         clickEventHandler.customEventData = "loadChoose";//动画名称
 

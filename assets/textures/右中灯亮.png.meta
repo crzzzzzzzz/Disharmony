@@ -1,15 +1,15 @@
 {
   "ver": "2.2.0",
-  "uuid": "9d538382-c48c-4428-94a6-345b648e831e",
+  "uuid": "6133c213-8fcf-45e4-a7ae-7bb8e1323ca7",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
   "subMetas": {
-    "中间按钮": {
+    "右中灯亮": {
       "ver": "1.0.3",
-      "uuid": "93c50191-876e-41a5-8dc7-430c55ea4ef6",
-      "rawTextureUuid": "9d538382-c48c-4428-94a6-345b648e831e",
+      "uuid": "51364ca5-b21e-40a7-b968-c08ac68b52d4",
+      "rawTextureUuid": "6133c213-8fcf-45e4-a7ae-7bb8e1323ca7",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -17,9 +17,9 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 257,
+      "width": 186,
       "height": 172,
-      "rawWidth": 257,
+      "rawWidth": 186,
       "rawHeight": 172,
       "borderTop": 0,
       "borderBottom": 0,

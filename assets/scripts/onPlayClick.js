@@ -7,14 +7,17 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+
         playBtn:{
             default:null,
             type:cc.Button
         },
+
         pages:{
             default:null,
             type:cc.PageView
         },
+
         message:{
             default:null,
             type:cc.Animation
@@ -27,7 +30,7 @@ cc.Class({
     onLoad () {
         var clickEventHandler = new cc.Component.EventHandler();
         clickEventHandler.target = this.node; //这个 node 节点是你的事件处理代码组件所属的节点
-        clickEventHandler.component = "onBtnClick";//这个是代码文件名
+        clickEventHandler.component = "onPlayClick";//这个是代码文件名
         clickEventHandler.handler = "callback";
         clickEventHandler.customEventData = "Out";//动画名称
 
@@ -49,5 +52,4 @@ cc.Class({
     loadPlay: function(){
         cc.director.loadScene('Game');
     },
-    //update (dt) {},
 });

@@ -3,8 +3,10 @@ cc.Class({
     extends: cc.Component,
     properties: {
         rankingScrollView: cc.Sprite,//显示排行榜
-    },
-    onLoad() {
+        score:{
+            default:null,
+            type:cc.Label
+        }
     },
 
     loadChoose:function(){
@@ -22,18 +24,7 @@ cc.Class({
                 MAIN_MENU_NUM: "song1"
             });
         }
-    },
-
-    friendButtonFunc(event) {
-        if (CC_WECHATGAME) {
-            //发消息给子域
-            window.wx.postMessage({
-                messageType: 1,
-                MAIN_MENU_NUM: "song1"
-            });
-        } else {
-            cc.log("获取好友排行榜数据。song1");
-        }
+        this.score.string = "本次得分："+recorder.Score;
     },
 
     submitScoreButtonFunc(){
