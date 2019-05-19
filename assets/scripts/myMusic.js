@@ -1,5 +1,6 @@
 var recorder = require("Score");
 var Notes = require("song1");
+var audioID;
 cc.Class({
   extends: cc.Component,
 
@@ -47,9 +48,9 @@ cc.Class({
 
 
   play: function () {
-      this.audioID = cc.audioEngine.play(this['song'+Global.songIndex], false, 1);
-      console.log(cc.audioEngine.getDuration(this.audioID));
-      this.scheduleOnce(this.End,cc.audioEngine.getDuration(this.audioID)||91)
+      audioID = cc.audioEngine.play(this['song'+Global.songIndex], false, 1);
+      console.log(cc.audioEngine.getDuration(audioID));
+      this.scheduleOnce(this.End,cc.audioEngine.getDuration(audioID)||91)
   },
 
   End:function(){
@@ -60,17 +61,14 @@ cc.Class({
       this.execution.string = "EXECUTION :\n" + exec + '%';
       this.resultAnim.play('Result');
       this.lR.interactable = true;
-      cc.log('here');
   },
 
   onLoad() {
-    this.audioID;
+    audioID;
   },
 
   start() {
-    this.scheduleOnce(this.play, 3);
-  },
-
-  //update(dt) {}
-  
+    this.scheduleOnce(this.play, 5.5);
+  },  
 });
+module.exports = audioID;

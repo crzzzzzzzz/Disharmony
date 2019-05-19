@@ -1,4 +1,4 @@
-var Notes = require("song1");
+
 var recorder = {
     Score: 0 ,//记录分数
     Combo: 0 ,//记录连击数

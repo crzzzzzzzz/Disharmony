@@ -1,3 +1,4 @@
+var audioID = require("myMusic");
 cc.Class({
     extends: cc.Component,
 
@@ -34,7 +35,9 @@ cc.Class({
         anim.play(customEventData);
         this.leftMask.active = false;
         this.rightMask.active = false;
+        cc.audioEngine.setCurrentTime(audioID, 0);
         cc.audioEngine.stopAll();
+        cc.audioEngine.uncacheAll();
     },
 
     loadChoose:function(){
