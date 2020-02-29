@@ -1,2 +1,1 @@
-# Disharmony
-不和谐非常不和谐😫
+这是一个基于CocosCreator的音乐类微信小游戏
